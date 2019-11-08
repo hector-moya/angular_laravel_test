@@ -1,0 +1,27 @@
+<!--<mat-toolbar color="primary" class="expanded-toolbar">
+  <span>
+    <button mat-button routerLink="/">{{title}}</button>
+    <button mat-button routerLink="/"><mat-icon>home</mat-icon></button>
+  </span>
+  <span>
+    <button mat-button *ngIf="!isAuthenticated" routerLink="/login"> Login </button>
+    <button mat-button *ngIf="isAuthenticated" (click)="logout()"> Logout </button>
+  </span>
+  <button mat-button routerLink="/calculator"><mat-icon>dialpad</mat-icon></button>
+</mat-toolbar>
+<router-outlet></router-outlet>
+-->
+<app-header></app-header>
+<alert type="success">Hello, I'm a Success Callout Alert</alert>
+<div class="off-canvas-wrapper">
+  <main class="grid-container-fluid">
+    <div class="grid-x grid-margin-x">
+      <div class="small-12 cell">
+        <router-outlet></router-outlet>
+        <!--<router-outlet (activate)="onActivate($event)"></router-outlet>-->
+      </div><!-- /cell -->
+    </div><!-- /grid-x -->
+  </main><!-- /grid-container --> 
+</div><!-- /off-canvas-wrapper -->
+
+<app-footer></app-footer>

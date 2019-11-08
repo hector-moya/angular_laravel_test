@@ -1,0 +1,15 @@
+@import '~styles.scss';
+
+.mobile-nav-bar {
+  background-color: $white;
+  margin: 20px 0px 20px 0px;
+  
+}
+.title-bar-text {
+  color: $title-color;
+  
+}
+#nameLabel > li {
+  list-style-type: none;
+
+}
